@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Design Doncaster: Build a Professional Online Presence</title>
+<meta name="description" content="A practical guide to web design in Doncaster: essential elements, website types, features, process, SEO, mistakes to avoid and how to choose a web design company.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0A1B3D;--navy:#102A63;--blue:#2457F5;--mint:#19C3A0;--soft:#F1F5FF;--line:#DCE4F8;--text:#34436A}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'Source Sans 3',system-ui,sans-serif;font-size:18px;line-height:1.7;color:var(--text);background:#fff}
+h1,h2,h3,.brand{font-family:'Plus Jakarta Sans',sans-serif;color:var(--ink);line-height:1.2}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 28px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;height:68px;white-space:nowrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;text-decoration:none}
+.logo{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--mint));position:relative}
+.logo:after{content:"";position:absolute;inset:8px;border:3px solid #fff;border-radius:3px}
+nav{display:flex;gap:24px}
+nav a{text-decoration:none;color:var(--text);font-weight:600;font-size:16px}
+nav a:hover{color:var(--blue)}
+.cta{background:var(--blue);color:#fff;padding:10px 20px;border-radius:999px;font-weight:600;font-size:16px;text-decoration:none}
+.cta:hover{background:var(--navy)}
+.hero{background:radial-gradient(ellipse 55% 80% at 90% 0%,rgba(25,195,160,.35),transparent 60%),linear-gradient(135deg,var(--ink),var(--navy) 65%,#2346B8);color:#DCE6FF;padding:96px 0 84px}
+.hero h1{color:#fff;font-size:clamp(34px,5.4vw,60px);font-weight:800;max-width:900px;letter-spacing:-.02em}
+.intro{max-width:830px;margin-top:30px;display:grid;gap:18px;font-size:19px}
+.intro a{color:#6FF0D2;font-weight:600;text-underline-offset:4px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:34px}
+.pills span{border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:6px 16px;font-size:15px;color:#fff}
+section{padding:80px 0}
+.alt{background:var(--soft)}
+h2{font-size:clamp(26px,3.3vw,38px);font-weight:700;letter-spacing:-.01em;margin-bottom:20px}
+h3{font-size:20px;font-weight:700;margin-bottom:10px}
+.lead{max-width:790px;display:grid;gap:16px}
+.split{display:grid;grid-template-columns:1fr 1.3fr;gap:56px;align-items:start}
+.note{border-left:5px solid var(--mint);background:#E9FBF6;padding:16px 22px;border-radius:0 14px 14px 0;color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-top:34px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;display:grid;gap:12px;align-content:start}
+.card .n{width:40px;height:40px;border-radius:12px;background:var(--blue);color:#fff;display:grid;place-items:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:700}
+.card.t .n{background:var(--mint);color:var(--ink)}
+.feat{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin-top:30px}
+.feat li{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 20px}
+.feat b{color:var(--ink)}
+.tablewrap{overflow-x:auto;border-radius:18px;border:1px solid var(--line);margin:28px 0}
+table{width:100%;border-collapse:collapse;min-width:620px;background:#fff}
+th{background:var(--navy);color:#fff;text-align:left;font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;padding:16px 22px}
+td{padding:16px 22px;border-top:1px solid var(--line)}
+td:first-child{font-weight:600;color:var(--ink)}
+tr:nth-child(even) td{background:var(--soft)}
+.faq{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:22px;margin-top:32px}
+.faq article{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 28px}
+.faq h3{font-size:18px}
+.closing{background:linear-gradient(135deg,var(--ink),var(--navy));color:#DCE6FF}
+.closing h2{color:#fff}
+footer{background:var(--ink);color:#AEBBE0;padding:56px 0 30px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:center}
+footer .brand{color:#fff}
+footer p{max-width:430px;margin-top:10px;font-size:16px}
+.social{display:flex;gap:12px;list-style:none}
+.social a{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.25);color:#fff;transition:.2s}
+.social a:hover{background:var(--mint);border-color:var(--mint);color:var(--ink)}
+.social svg{width:20px;height:20px;fill:currentColor}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:22px;font-size:15px;text-align:center}
+@media(max-width:860px){nav{display:none}.split{grid-template-columns:1fr;gap:18px}.faq{grid-template-columns:1fr}section{padding:56px 0}.hero{padding:64px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top"><span class="logo"></span>Web Design Doncaster</a>
+    <nav aria-label="Main">
+      <a href="#what">What Is Web Design</a>
+      <a href="#elements">Elements</a>
+      <a href="#types">Types</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQs</a>
+    </nav>
+    <a class="cta" href="#choose">Choose a Company</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Web Design Doncaster: Build a Professional Online Presence</h1>
+      <div class="intro">
+        <p>A professional website has become one of the most important assets for businesses that want to grow, attract customers, and establish credibility in the digital marketplace. Whether someone is searching for a local service, comparing products, or researching a company, a website often provides the first impression of a business. For companies looking to improve their online presence, <a href="https://lumenxstudios.com/locations/doncaster/web-design-company/" target="_blank" rel="noopener">Web Design Doncaster</a> is an important topic because a well-planned website can help connect local businesses with potential customers while supporting long-term growth.</p>
+        <p>Modern web design involves much more than selecting attractive colours and adding images to different pages. It combines visual presentation, functionality, navigation, mobile responsiveness, loading performance, and search engine optimisation. Every element should work together to create an experience that helps visitors understand a business and find the information they need.</p>
+        <p>Businesses in Doncaster operate across different industries, including retail, construction, hospitality, healthcare, education, and professional services. Each industry has its own website requirements and customer expectations. A thoughtfully designed website can help a company communicate its services, present its products, answer common questions, and encourage visitors to make enquiries or purchases.</p>
+      </div>
+      <div class="pills"><span>Responsive</span><span>Fast</span><span>SEO-ready</span><span>Secure</span><span>Built for Doncaster</span></div>
+    </div>
+  </div>
+
+  <section id="what">
+    <div class="wrap split">
+      <h2>What Is Web Design and Why Does It Matter?</h2>
+      <div class="lead">
+        <p>Web design is the process of planning and creating the visual appearance, layout, structure, and user experience of a website. It determines how information is organised and how visitors interact with different sections of a digital platform.</p>
+        <p>A successful website should be easy to understand and navigate. Visitors should quickly recognise what the business offers, where to find important information, and how to contact the company. If a website is confusing, outdated, or difficult to use, potential customers may leave and explore competing businesses.</p>
+        <p>Professional web design helps create a consistent brand identity while making important information accessible. It also supports business objectives by guiding visitors towards relevant actions, such as requesting a quotation, booking an appointment, submitting a contact form, or completing an online purchase.</p>
+        <div class="note">For Doncaster businesses, a professionally designed website can become a central point for digital communication and customer interaction.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap split">
+      <h2>Why Doncaster Businesses Need Professional Website Design</h2>
+      <div class="lead">
+        <p>Customers increasingly use smartphones, tablets, and computers to discover local businesses. Before contacting a service provider or visiting a shop, many people explore its website to understand its products, pricing, reputation, and availability.</p>
+        <!-- SECOND LINK: replace the # in href below with your second URL -->
+        <p>A <a href="#" target="_blank" rel="noopener">professionally designed website</a> helps businesses present this information in an organised way. It can also make a company appear more established and trustworthy, particularly when the website includes clear service descriptions, genuine customer reviews, accurate contact information, and examples of previous work.</p>
+        <p>Another important advantage is accessibility. A website allows customers to explore business information outside normal working hours. This is especially useful for companies that receive enquiries from customers with different schedules.</p>
+        <p>A well-developed website can also support marketing activities. Search engine optimisation, social media campaigns, email marketing, and online advertisements can direct visitors towards specific website pages where they can learn more about the business.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="elements">
+    <div class="wrap">
+      <h2>Essential Elements of Effective Web Design</h2>
+      <div class="lead"><p>Creating a successful website requires attention to several important design and technical elements. Each component contributes to how visitors experience the platform.</p></div>
+      <div class="grid">
+        <div class="card"><div class="n">1</div><h3>Responsive and Mobile-Friendly Design</h3>
+          <p>Mobile responsiveness ensures that a website adjusts to different screen sizes and devices. A page that looks excellent on a desktop computer may become difficult to use if its text, images, or navigation do not adapt properly to smartphones.</p>
+          <p>Responsive design automatically adjusts layouts, image sizes, menus, and other elements to provide a more consistent experience. This is important because many customers browse websites using mobile devices.</p>
+          <p>A mobile-friendly website should have readable text, accessible buttons, clear navigation, and forms that are easy to complete without excessive zooming or scrolling.</p></div>
+        <div class="card"><div class="n">2</div><h3>Attractive Visual Appearance</h3>
+          <p>Visual design influences how visitors perceive a business. Colour combinations, typography, photography, spacing, and page layouts all contribute to the overall impression.</p>
+          <p>A professional website should reflect the company's identity rather than simply following popular design trends. For example, a creative agency may prefer a bold and visually expressive layout, while a financial consultancy might benefit from a cleaner and more formal presentation.</p>
+          <p>Consistency is equally important. Using the same brand colours, fonts, and visual style throughout the website creates a recognisable appearance.</p></div>
+        <div class="card"><div class="n">3</div><h3>Easy Navigation and User Experience</h3>
+          <p>Navigation helps visitors move between different website sections. A clear menu should make important pages easy to find without requiring unnecessary clicks.</p>
+          <p>Common navigation pages include Home, About Us, Services, Products, Blog, and Contact. The exact structure depends on the business and the amount of information it needs to present.</p>
+          <p>User experience also involves understanding how visitors interact with the website. Important information should be easy to locate, buttons should have clear labels, and contact options should be visible.</p></div>
+        <div class="card"><div class="n">4</div><h3>Fast Loading Performance</h3>
+          <p>Website speed plays an important role in user experience. Visitors may become frustrated when pages take too long to load, especially when browsing through mobile connections.</p>
+          <p>Slow performance can result from oversized images, unnecessary scripts, poorly configured hosting, and inefficient website code.</p>
+          <p>Developers can improve performance by compressing images, reducing unnecessary plugins, enabling caching, and selecting suitable hosting services. Regular testing helps identify problems before they affect too many visitors.</p></div>
+        <div class="card"><div class="n">5</div><h3>Search Engine-Friendly Structure</h3>
+          <p>A website should be designed with search engines and human visitors in mind. Proper headings, descriptive page titles, useful content, logical URLs, internal links, and relevant metadata can help search engines understand website pages.</p>
+          <p>Technical elements such as XML sitemaps, crawlability, mobile usability, and secure HTTPS connections should also be considered.</p>
+          <p>Search engine optimisation is not guaranteed simply by having an attractive website. It requires useful content, technical maintenance, and ongoing optimisation based on the needs of the target audience.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="types">
+    <div class="wrap">
+      <h2>Different Types of Websites for Doncaster Businesses</h2>
+      <div class="lead"><p>Every business has different requirements, which means website design should reflect its purpose and customers.</p></div>
+      <div class="grid">
+        <div class="card t"><div class="n">B</div><h3>Business Websites</h3>
+          <p>A business website introduces a company, explains its services, and provides essential contact information. It is suitable for organisations that want to establish an online presence and generate customer enquiries.</p>
+          <p>Service pages, testimonials, company information, and enquiry forms are common features of this type of website.</p></div>
+        <div class="card t"><div class="n">E</div><h3>E-Commerce Websites</h3>
+          <p>E-commerce websites allow customers to browse products, add items to shopping carts, and complete purchases online. These platforms require organised product categories, secure payment options, clear delivery information, and a straightforward checkout process.</p>
+          <p>For retailers, an effective online store can create opportunities to reach customers beyond their immediate geographical area.</p></div>
+        <div class="card t"><div class="n">P</div><h3>Portfolio Websites</h3>
+          <p>Creative professionals, photographers, designers, and agencies often use portfolio websites to showcase their work. These platforms focus on presenting projects through images, descriptions, case studies, and relevant client information.</p>
+          <p>A carefully organised portfolio can help potential customers understand the quality and style of previous work.</p></div>
+        <div class="card t"><div class="n">A</div><h3>Booking and Appointment Websites</h3>
+          <p>Businesses that operate through appointments may need websites with scheduling functionality. Examples include salons, consultants, training providers, and certain professional services.</p>
+          <p>Online booking systems can help customers check availability, select suitable times, and submit appointment requests more conveniently.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Important Features to Include in a Professional Website</h2>
+      <div class="lead"><p>A business website should provide the functionality visitors need without becoming unnecessarily complicated. Depending on its purpose, the following features can improve its usefulness:</p></div>
+      <ul class="feat">
+        <li><b>Clear homepage:</b> Introduces the business and communicates its main services or products.</li>
+        <li><b>About page:</b> Explains the company's background, values, and experience.</li>
+        <li><b>Service pages:</b> Provides detailed information about individual services.</li>
+        <li><b>Contact information:</b> Displays accurate phone numbers, email details, and relevant business information.</li>
+        <li><b>Enquiry forms:</b> Allows potential customers to request information or quotations.</li>
+        <li><b>Customer testimonials:</b> Presents genuine feedback that can help build confidence.</li>
+        <li><b>Security features:</b> Uses HTTPS and appropriate security measures to protect website users.</li>
+        <li><b>Mobile responsiveness:</b> Ensures that the website works across different screen sizes.</li>
+        <li><b>Clear calls to action:</b> Guides visitors towards useful next steps.</li>
+      </ul>
+      <div class="lead" style="margin-top:26px"><p>The right combination of features depends on the business model, target audience, and website objectives.</p></div>
+    </div>
+  </section>
+
+  <section class="alt" id="process">
+    <div class="wrap">
+      <h2>Understanding the Web Design Process</h2>
+      <div class="lead"><p>Professional website development usually follows an organised process that turns an initial idea into a working digital platform. Understanding these stages helps business owners know what to expect when working with a designer or development team.</p></div>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Development stage</th><th>Main activities</th><th>Expected result</th></tr></thead>
+          <tbody>
+            <tr><td>Initial consultation</td><td>Discuss goals and requirements</td><td>Clear project direction</td></tr>
+            <tr><td>Research and planning</td><td>Study audience and competitors</td><td>Website structure</td></tr>
+            <tr><td>Design development</td><td>Create layouts and visual concepts</td><td>Design prototype</td></tr>
+            <tr><td>Website development</td><td>Build pages and functionality</td><td>Working website</td></tr>
+            <tr><td>Testing and review</td><td>Check devices, links, and performance</td><td>Improved reliability</td></tr>
+            <tr><td>Launch and maintenance</td><td>Publish and monitor the website</td><td>Live online presence</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="lead"><p>Communication is important throughout the process. Clients should provide accurate business information, relevant images, branding materials, and feedback to help ensure that the finished website meets their expectations.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <h2>How Professional Web Design Supports SEO</h2>
+      <div class="lead">
+        <p>Web design and SEO are closely connected because a website's structure and performance can influence how visitors and search engines interact with its content.</p>
+        <p>A logical page hierarchy helps organise information, while descriptive headings make content easier to understand. Internal links connect related pages and help visitors explore additional information.</p>
+        <p>Image optimisation can improve loading performance, while descriptive image alt text helps communicate the purpose of visual content to users who rely on assistive technologies.</p>
+        <p>A good website should also avoid duplicate pages, broken links, confusing navigation, and unnecessary technical elements. Developers and SEO professionals can work together to create a website that provides a useful experience while supporting search visibility.</p>
+        <div class="note">For businesses targeting customers in Doncaster, relevant local information and service descriptions can further strengthen the connection between website content and customer searches.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="wrap split">
+      <h2>Common Web Design Mistakes Businesses Should Avoid</h2>
+      <div class="lead">
+        <p>Even attractive websites can struggle when important usability and technical details are overlooked. One common mistake is prioritising appearance over functionality. A visually impressive layout is not useful if visitors cannot find services or contact information.</p>
+        <p>Another issue is using too much text, too many animations, or excessive visual effects. These elements can make pages difficult to navigate and may negatively affect loading performance.</p>
+        <p>Ignoring mobile users is another major problem. Every important page should be tested on different screen sizes to ensure that buttons, images, forms, and menus work correctly.</p>
+        <p>Businesses should also avoid publishing incomplete service descriptions, outdated contact details, and low-quality images. Regular website reviews can help maintain accuracy and improve the overall customer experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="choose">
+    <div class="wrap split">
+      <h2>How to Choose a Web Design Company in Doncaster</h2>
+      <div class="lead">
+        <p>Selecting a suitable web design provider requires more than comparing prices. Businesses should examine the provider's experience, portfolio, technical capabilities, and communication process.</p>
+        <p>Start by reviewing previous projects to understand the quality of its design work. Look for websites that demonstrate clear navigation, responsive layouts, good visual consistency, and relevant functionality.</p>
+        <p>It is also important to understand what the quoted price includes. Some projects cover only design, while others include development, hosting setup, content support, SEO foundations, and ongoing maintenance.</p>
+        <p>Before committing to a project, discuss ownership of the website, access to hosting accounts, content management arrangements, security responsibilities, and future update costs.</p>
+        <p>A reliable provider should explain technical decisions in understandable language and establish realistic delivery expectations. The best choice is a company that understands your business objectives and can create a website suited to your actual requirements.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap split">
+      <h2>Conclusion</h2>
+      <div class="lead">
+        <p>Web Design Doncaster is an important consideration for businesses that want to establish a professional online presence and connect with customers more effectively. A well-designed website combines attractive visuals, responsive layouts, easy navigation, fast performance, and useful content to create a positive experience for visitors.</p>
+        <p>Whether you need a simple business website, an e-commerce platform, a creative portfolio, or an appointment booking system, choosing the right design approach can make a significant difference. Professional planning and development also provide opportunities to create a stronger foundation for SEO and future digital marketing activities.</p>
+        <p>Businesses should focus on functionality, accessibility, security, and customer needs rather than selecting a design based only on appearance. By maintaining accurate information, updating content, and monitoring website performance, companies in Doncaster can build a reliable digital platform that supports their long-term business goals.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <h2>Frequently Asked Questions (FAQs)</h2>
+      <div class="faq">
+        <article><h3>1. What does web design in Doncaster include?</h3><p>Web design services may include website planning, visual design, responsive layouts, page development, navigation, contact forms, content management systems, and basic SEO setup. The exact services depend on the provider and project requirements.</p></article>
+        <article><h3>2. Why is professional website design important for businesses?</h3><p>A professional website helps businesses establish credibility, communicate their services, provide useful information, and create better experiences for potential customers. It can also support online marketing and lead generation.</p></article>
+        <article><h3>3. How much does a website cost in Doncaster?</h3><p>Website costs vary depending on the number of pages, design complexity, functionality, content requirements, and development time. A simple business website generally requires a smaller investment than a customised e-commerce platform.</p></article>
+        <article><h3>4. How long does it take to design and develop a website?</h3><p>A basic website may take a few weeks, while larger platforms with custom functionality can require several months. The timeline depends on project complexity, content preparation, revisions, and testing.</p></article>
+        <article><h3>5. Is mobile-friendly web design necessary?</h3><p>Yes. Responsive design allows websites to work across smartphones, tablets, and desktop computers. It improves usability and helps visitors access information regardless of the device they use.</p></article>
+        <article><h3>6. Can web design help improve Google rankings?</h3><p>A technically sound and well-structured website can support SEO by improving usability, page organisation, mobile experience, and content accessibility. However, rankings also depend on content quality, competition, relevance, and other search signals.</p></article>
+        <article><h3>7. Which platform is best for building a business website?</h3><p>WordPress is a popular option because it offers flexibility and a large selection of themes and plugins. Other platforms may be suitable depending on the project's complexity, budget, and required features.</p></article>
+        <article><h3>8. Do websites need regular maintenance?</h3><p>Yes. Regular maintenance helps keep software updated, improve security, fix broken links, monitor performance, and ensure that business information remains accurate.</p></article>
+        <article><h3>9. What should I prepare before hiring a web designer?</h3><p>Prepare your business information, service descriptions, logo, brand colours, preferred website examples, images, contact details, and an outline of the features you need. Having these materials ready can make the development process smoother.</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top"><span class="logo"></span>Web Design Doncaster</a>
+        <p>Professional, responsive and search-friendly websites that help Doncaster businesses connect with customers.</p>
+      </div>
+      <ul class="social" aria-label="Social links">
+        <!-- Replace each # with your real profile URL -->
+        <li><a href="#" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-.9.4-1.7 1.8-1.7h1.6V3.8c-.3 0-1.3-.2-2.4-.2-2.5 0-4.1 1.5-4.1 4.2v2.7H7.6v3.3h2.8V22z"/></svg></a></li>
+        <li><a href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.2-3.2a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4z"/></svg></a></li>
+        <li><a href="#" aria-label="LinkedIn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.5 9h3.8v12H4.5zM6.4 3a2.2 2.2 0 1 1 0 4.4 2.2 2.2 0 0 1 0-4.4zM10.6 9h3.6v1.7c.5-1 1.8-2 3.7-2 3.9 0 4.6 2.5 4.6 5.8V21h-3.8v-5.800c0-1.400 0-3.100-1.900-3.100s-2.200 1.500-2.200 3V21h-3.800z"/></svg></a></li>
+        <li><a href="#" aria-label="YouTube" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M21.600 7.200a2.500 2.500 0 0 0-1.800-1.800C18.200 5 12 5 12 5s-6.200 0-7.800.4A2.500 2.500 0 0 0 2.400 7.200C2 8.800 2 12 2 12s0 3.200.4 4.800a2.500 2.500 0 0 0 1.800 1.800C5.800 19 12 19 12 19s6.200 0 7.800-.4a2.500 2.500 0 0 0 1.800-1.800c.4-1.600.4-4.800.4-4.800s0-3.200-.4-4.800zM10 15V9l5.200 3z"/></svg></a></li>
+        <li><a href="#" aria-label="X (Twitter)" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.800 3h3.100l-6.800 7.800L22 21h-6.200l-4.900-6.400L5.300 21H2.200l7.300-8.300L2 3h6.400l4.400 5.900zm-1.100 16.200h1.700L7.400 4.700H5.600z"/></svg></a></li>
+      </ul>
+    </div>
+    <div class="copy">© 2026 Web Design Doncaster. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
+
